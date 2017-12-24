@@ -1,0 +1,106 @@
+<div class="container-fluid" id="home">
+  <header class="row">
+    <div id="home-logo">
+      <p>Facelook</p>
+    </div>
+    <div id="sign-in">
+    <form>
+      <table>
+        <tr>
+          <td>
+            <label for="username">username</label>
+          </td>
+          <td>
+            <label for="password">password</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" name="username">
+          </td>
+          <td>
+            <input type="password" name="password">  
+          </td>
+          <td>
+            <button id="log-in">Log In</button>
+            <!--<input id="submit" type="submit" name="log-in">-->
+          </td>
+        </tr>
+      </table>
+    </form>
+    </div>
+  </header>
+  <main class="row">
+    <aside>
+      <h1>Connect with all Your Friends!</h1>
+      <ul>
+        <li>See photos and friends in your newsfeed</li>
+        <li>Post your status for the world to see from your profile</li>
+        <li>Get in touch with your friends by "friending" them</li>
+        <li>Like thigs because you're a positive person</li>
+      </ul>
+    </aside>
+    <div id="sign-up">
+    <form>
+      <table>
+      <caption>
+        <p>Sign Up</p>
+      </caption>
+      <tr>
+        <td class="sign-up-info">
+          <input type="text" name="firstname" placeholder="First Name">
+        </td>
+        <td class="sign-up-info">
+          <input type="text" name="lastname" placeholder="Last Name">
+        </td>
+      </tr> 
+      <tr>
+        <td class="sign-up-info" colspan="2">
+          <input type="text" name="email" placeholder="Your Email">
+        </td>
+      </tr>
+      <tr>
+        <td class="sign-up-info" colspan="2">
+          <input type="password" name="password" placeholder="Your New Password">
+        </td>
+      </tr>
+      <tr>
+        <td class="sign-up-info" colspan="2">
+          <input type="password" name="password-confirm" placeholder="Confirm Your Password">
+        </td>
+      </tr>
+      </table>
+    </form>
+    <form>
+      <table>
+        <tr>
+          <td id="birthday-heading" colspan="3">
+            <label>Birthday</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <select name="birthday-month">
+              <option selected="">Month</option>
+            </select>
+          </td>
+          <td>
+            <select name="birthday-day">
+              <option selected="">Day</option>
+            </select>
+          </td>
+          <td>
+            <select name="birthday-year">
+              <option selected="">Year</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      
+      <input class="gender" type="radio" name="gender" value="male">male
+      <input class="gender" type="radio" name="gender" value="female">female
+      <button>Sign Up!</button>
+    </form>
+  </div>
+  </main>
+</div>

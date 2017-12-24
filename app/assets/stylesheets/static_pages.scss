@@ -1,0 +1,398 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*==================== 
+CSS Reset
+====================*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "open sans", sans-serif;
+}
+
+/*==================== 
+Home page styles
+====================*/
+
+header {
+  height: 125px;
+  background: #2B78E4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-size: 45px;
+}
+
+header p {
+  margin-left: 50px;
+}
+
+td {
+  font-size: 12px;
+  padding: 5px;
+}
+
+caption {
+  font-size: 50px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+input {
+  width: 100%
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+aside {
+  width: 60%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  margin-top: 15%;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+ul {
+  list-style: disc;
+  margin: auto;
+  display: inline-block;
+  text-align: left;
+  line-height: 3em;
+}
+
+li {
+  margin-left: 100px;
+  font-size: 20px;
+}
+
+button {
+  height: 50px;
+  width: 375px;
+  background: green;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  display: block;
+}
+
+#home-logo {
+  width: 60%
+}
+
+#sign-in {
+  width: 40%;
+  display: flex;
+}
+
+#log-in {
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  background: #9FC5F9;
+  color: black;
+}
+
+#sign-up {
+  width: 40%;
+  margin-top: 3%;
+}
+
+#sign-up td{
+  padding: 20px 20px 20px 0;
+}
+
+#birthday-heading {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.gender {
+  width: auto;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+/*==================== 
+About page styles
+====================*/
+
+*, ::after, ::before {
+    box-sizing: content-box;
+}
+
+#about{
+  
+  #header {
+    height: 65px;
+    font-size: 24px;
+    display: block;
+    min-width: 713px;
+   
+    #header-content {
+      max-width: 1015px;
+      min-width: 713px;
+      height: 65px;
+      margin: auto;
+    }
+
+    #profile-pic {
+      width: 40px;
+      height: 40px;
+      background-color: white;
+      float: left;
+    }
+
+    #logo {
+      margin-left: 5px;
+      float: left;
+    }
+
+    #searchbar {
+      width: 65%;
+      margin-left: 5%;
+      float: left;
+      font-size: 14px;
+    }
+
+    #profile-name-header {
+      float: right;
+      margin-left: 0;
+    }
+  }
+
+  #cover-photo, #navbar, #info {
+    max-width: 1015px;
+    min-width: 713px;
+  }
+
+  #cover-photo {
+    height: 300px;
+    margin: auto;
+    border: 2px solid;
+
+    #profile-photo {
+      height: 200px;
+      width: 200px;
+      border: 2px solid;
+      position: relative;
+      left: 15px;
+      top: 150px;
+      background: #EDEDED;
+
+      #profile-name-cover {
+        position: relative;
+        left: 220px;
+        top: 100px;
+        font-size: 32px;
+      }
+    }
+  }
+
+  #navbar {
+    height: 75px;
+    border: 2px solid;
+    margin: auto;
+    border-top: none;
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  #navbar-button-container {
+    width: 508px;
+    height: 75px;
+    margin: auto;
+    margin-right: 113px;
+    border-right: 2px solid;
+    display: flex;
+
+    .navbar-button {
+      height: 75px;
+      width: 125px;
+      border-left: 2px solid;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .count {
+      font-weight: normal;
+      color: grey;
+    }
+
+    #current-page {
+      background: #EDEDED;
+      border-bottom: 2px;
+    }
+  }
+
+  #edit-profile-link {
+    width: 150px;
+    border: none;
+  }
+
+  #info {
+    height: 550px;
+    border: 2px solid;
+    margin: auto;
+
+    header {
+      height: 50px;
+      background: #EDEDED;
+      border-bottom: black 2px solid;
+      display: flex;
+      padding-right: 20px;
+      padding-left: 140px;
+      box-sizing: border-box;
+
+      h1 {
+        font-size: 30px;
+        margin: auto;
+        color: black;
+        display: inline-block;
+        width: 100px;
+      }
+    }
+
+    #edit-profile {
+      height: 30px;
+      width: 110px;
+      background: blue;
+      color: white;
+      font-weight: bold;
+      border: black 2px solid;
+      padding: 0 5px 0 5px;
+      box-shadow: black 3px 3px;
+      float: right;
+
+      p {
+        font-size: 14px;
+        margin: auto;
+      }
+    }
+
+    #edit-profile-link a {
+      float: right;
+      display: block;
+      margin-right: 20px;
+      font-size: 16px;
+      font-weight: normal;
+    }
+
+    #basic-info {
+      width: 45%;
+      height: 100%;
+      float: left;
+
+      #basic-info-table, #contact-info-table, #blurbs {
+        margin: auto;
+
+        td {
+          width: 175px;
+          text-align: left;
+          padding: 20px 0 20px 0;
+          font-size: 14px;
+        }
+
+        h2 {
+          font-size: 24px;
+          margin-top: 20px;
+          padding-top: 20px;
+          font-weight: bold;
+          text-align: left;
+        }
+
+        .left {
+          text-align: left;
+          font-weight: bold;
+        }
+      }
+    }
+
+    #blurbs {
+      width:55%;
+      height: 100%;
+      float: left;
+
+      h2 {
+        font-size: 24px;
+        margin-top: 20px;
+        padding-top: 20px;
+        font-weight: bold;
+        text-align: left;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 2em;
+        padding-right: 100px;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  @media only screen and (max-width: 1050px) {
+    #profile-name-header {
+      margin-right: 0;
+    }
+  }
+}
